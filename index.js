@@ -70,7 +70,7 @@
 // coffeeMachine.makeCoffee(beep);
 // // call back "onfinish"
 
-//bai17
+//bai17 map
 // var rectacles = [
 //     {w: 100, h: 5},
 //     {w: 200, h: 10},
@@ -82,10 +82,100 @@
 // console.log(circleRectacles);
 
 
-// //bai 18
+// //bai 18 filter
 // var a = [5 , 6 , 7];
 // var b = a.filter(function(x){
 //     return x % 2 === 0;
 // })
 // console.log(b);
 
+
+//bai 19 find
+// var a = [ 1, 4, 7, 8];
+// var b = a.find(function(x){
+//     return x % 2 === 0;
+// })
+// console.log(b);
+// // chay qua tung phan tu mot den khi co phan tu thoa dk no se tra ve phan tu do va khong tim kiem nua 
+
+
+//bai 20 reduce
+// var orders = [
+//     { name: "A", quantity: 2, price: 100 },
+//     { name: "B", quantity: 1, price: 200 },
+//     { name: "C", quantity: 5, price: 150 }
+//   ];
+  
+  
+//   var orderNames = orders.map(function(x) {
+//     return x.quantity * x.price;
+//   });
+//   var sumOrder = orderNames.reduce(function(x, y) {
+//     return x + y;
+//   });
+//   console.log(sumOrder);
+
+//bai 21
+// var product = [
+//     { name : 'A', unitPrice : 100, quantity: 20, category: 'Electric good'},
+//     { name : 'B', unitPrice : 110, quantity: 12, category: 'Electric bad'},
+//     { name : 'C', unitPrice : 200, quantity: 40, category: 'Electric good'},
+//     { name : 'D', unitPrice : 10, quantity: 60, category: 'Electric bad'},
+//     { name : 'E', unitPrice : 600, quantity: 10, category: 'Electric good'}
+// ];
+// var orderPrice = product.map(function(x){
+//     return x.unitPrice * x.quantity
+// })
+// var sumPrice = orderPrice.reduce(function(x, y){
+//     return x + y;
+// })
+// console.log(sumPrice);
+
+
+//bai 22
+// var items = [
+//     'Tom', 'bill', 'kim'
+// ];
+// var queName = items.reduce(function(x,y){
+//     return  x  + '<' + y +'>';
+// },"");
+// console.log(queName);
+
+// var queNameMap = items.map(function(x){
+//     return '<'+ x + '>'
+// });
+// var allName = queNameMap.join('');
+// console.log(allName);
+
+
+
+//bai 23
+// var products= [
+//     { name : 'A', price: 50, stock: 10 },
+//     { name : 'B', price: 100, stock: 2 },
+//     { name : 'C', price: 20, stock: 1 }
+// ];
+// var expPrice = products.sort(function(a,b){
+//     return b.price - a.price;
+// })
+// console.log(expPrice);
+// var priceStock = products.map(function (x) {
+// 	return x.price*x.stock;
+// });
+// var orders = priceStock.sort(function (a, b) {
+// 	return a-b;
+// });
+// console.log(orders);
+
+
+//bai24
+// function rolllADie(){
+//     var random = Math.random();
+//     var xucsac = Math.ceil(random * 6);
+//     return xucsac;
+//    }
+//   console.log(rolllADie()); 
+
+
+  
+  
