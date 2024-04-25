@@ -17,10 +17,12 @@ function menu(){
 	switch(option){
 		case '1':{
 			showallStudent();
+			menu();
 			break;
 		}
 		case '2':{
 			showCreateStudent();
+			menu();
 			break;
 		}
 		case '3':{
