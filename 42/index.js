@@ -1,5 +1,5 @@
 var fs = require('fs');
-var fs = require('promise-fs');
+
 
 function readFilePromise(path){
 	return new Promise(function(resolve, reject){;
@@ -13,10 +13,12 @@ function readFilePromise(path){
   });
 }
 
-readFilePromise('song-1.txt')
-.then(function(song1){
-	 console.log(song1);
-})
-.catch(function(err){
+Promise.all([
+	readFilePromise('./song1.txt'),
+	readFilePromise('./song2.txt'),	
+	readFilePromise('./song3.txt'),
+	]).then(function(value){
+	console.log(value);
+}).catch(function(err){
 	console.log(err);
 })
