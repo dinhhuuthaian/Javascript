@@ -176,6 +176,78 @@
 //    }
 //   console.log(rolllADie()); 
 
+//bai25
+// function mouse(type,color){
+//     this.type = type
+//     this.color = color
 
+// }
+// var mouse1 = new mouse('nho','white');
+// var mouse2 = new mouse('to', 'black');
+
+// console.log(mouse1);
+// console.log(mouse2);
+//===================
+// var tom = {
+//     name: 'tom',
+//     stomach: [],
+//     eat: function(mouse){
+//         this.stomach.push(mouse);
+//         return this;
+//     }
+// }
+// function Mouse(name) {
+//     this.name = name
+//   };
   
+//   m1 = new Mouse('m1');
+//   m2 = new Mouse('m2');
+//   m3 = new Mouse('m3');
   
+//   tom.eat(m1).eat(m2).eat(m3);
+//   console.log(tom);
+  
+//   //bai 26
+//   var mouse = {
+//     weight : 0.2,
+//     getWeight: function(){
+//         return this.weight;
+//     }
+//   };
+//   function Mouse(color, weight){
+//     this.color = color;
+//     this.weight = weight;
+//     this.type = 'mouse';
+//   }
+//   Mouse.prototype.sleep = function(){
+//     console.log('sleepingg....')
+//   };
+//  var mickey = new Mouse('Black', 0.2);
+//     mickey.sleep();
+//  //  console.log(mickey.color);
+
+
+// //bai 29
+// var Mouse = require('./mouse');
+// var Cat = require ('./Cat')
+// var mickey = new Mouse('black');
+// var jerry = new Mouse('white');
+
+// var tom = new Cat();
+// tom.eat(mickey);
+// console.log(tom)
+
+//bai30
+// var fs = require('fs');
+
+// var text = fs.readFileSync('./song.txt', { encoding: 'utf8'});
+// console.log(text);
+
+// fs.writeFileSync('./song-2.txt', 'im AD');
+
+
+
+
+
+
+
